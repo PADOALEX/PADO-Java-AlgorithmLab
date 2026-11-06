@@ -1,5 +1,7 @@
 # PADO Java AlgorithmLab
 
+[![Build and test](https://github.com/PADOALEX/PADO-Java-AlgorithmLab/actions/workflows/ci.yml/badge.svg)](https://github.com/PADOALEX/PADO-Java-AlgorithmLab/actions/workflows/ci.yml)
+
 A small Java learning project: a generic doubly linked list, three manually implemented sorting algorithms, correctness tests and reproducible timing experiments. It develops ideas from [PADO AlgorithmLab in C#](https://github.com/PADOALEX/PADO-AlgorithmLab) in a separate implementation. No web framework or database is needed.
 
 ## Requirements and commands
@@ -38,7 +40,7 @@ The experiment runs 3 algorithms × 3 sizes (100, 1,000, 10,000) × 3 orders (ra
 
 This is an educational `System.nanoTime` experiment, not JMH. It lacks fork isolation, GC profiling and confidence intervals. JVM compilation, caches, CPU scheduling and background work affect timings. Do not compare it directly with the C# BenchmarkDotNet table or infer a language speed advantage.
 
-[Actual 27-row run](docs/BENCHMARK_RESULTS_2026-11-06.csv) and [verification](docs/VERIFICATION.md) distinguish local execution from prepared CI. GitHub Actions is configured but has not run for this unpublished repository.
+[Actual 27-row run](docs/BENCHMARK_RESULTS_2026-11-06.csv) and [verification](docs/VERIFICATION.md) record local execution. [GitHub Actions](https://github.com/PADOALEX/PADO-Java-AlgorithmLab/actions/workflows/ci.yml) runs the build, tests and CLI demo on pushes and pull requests; inspect the linked runs for their actual hosted status.
 
 ## Learning and provenance
 
